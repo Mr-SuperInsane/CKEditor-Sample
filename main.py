@@ -5,7 +5,6 @@ from wtforms import StringField, SubmitField
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'secret key'
 app.config['WTF_CSRF_ENABLED'] = True
 app.config['CKEDITOR_PKG_TYPE'] = 'standard'  # CKEditorのパッケージタイプを指定する（basic、standard、fullなど）
 ckeditor = CKEditor(app)
